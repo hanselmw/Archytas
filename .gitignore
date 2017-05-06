@@ -1,0 +1,22 @@
+/target
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+
+node_modules
+
+# Intellij
+.idea
+*.iml
+
+# Sublime Text
+*.sublime-*
+
+#Vim
+*.swp
+*.swo

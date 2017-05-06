@@ -47,7 +47,7 @@
    (= (type evt) cljs.core/PersistentArrayMap))
 
 (defn topic-event-chan
-  "Creates an async channel for digital events on a given pin."
+  "Creates an async channel for topics events on a given pin."
   ([board topic] (topic-event-chan board topic nil))
   ([board topic buf-or-n]
    (let [target (if (vector? topic) topic [topic nil])
@@ -61,7 +61,7 @@
    (topic-event-chan board [:digital-msg digital-pin] buf-or-n)))
 
 (defn analog-event-chan
-  "Creates an async channel for digital events on a given pin."
+  "Creates an async channel for analog events on a given pin."
   [board analog-pin  & {:keys [delta buf-or-n]
                         :or {delta 5 buf-or-n nil}}]
   (let [topic [:analog-msg analog-pin]

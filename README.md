@@ -1,4 +1,4 @@
-h# archytas
+# archytas
 
 [![Build Status](https://travis-ci.org/hanselmw/archytas.svg?branch=master)](https://travis-ci.org/hanselmw/archytas)
 
